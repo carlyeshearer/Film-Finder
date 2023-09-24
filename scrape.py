@@ -26,6 +26,7 @@ cinemark_egyptian_times = cinemark_egyptian_soup.select('.ticketicons')
 
 x = datetime.now()
 remove_date = x.strftime('%a') + ', ' + x.strftime('%b') + ' ' + x.strftime('%d') + ': '
+print(remove_date)
 
 movieList = []
 
@@ -117,7 +118,7 @@ def display_times():
     else:
       count+= 1
       continue
-  if count == len(movieList):
+  if count == len(movieList) or time == '':
     time_text.configure(text='No movies are showing at this time!')
 
 def display_titles():
@@ -130,7 +131,7 @@ def display_titles():
       else:
          count+= 1
          continue
-  if count == len(movieList):
+  if count == len(movieList) or title == '':
     title_text.configure(text='This movie is not showing at any theaters!')
 
 window = Tk()
