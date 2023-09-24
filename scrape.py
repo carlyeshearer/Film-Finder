@@ -25,7 +25,7 @@ cinemark_egyptian_titles = cinemark_egyptian_soup.select('.media-heading')
 cinemark_egyptian_times = cinemark_egyptian_soup.select('.ticketicons')
 
 x = datetime.now()
-remove_date = x.strftime('%a') + ', ' + x.strftime('%b') + ' ' +  x.strftime('%y') + ': '
+remove_date = x.strftime('%a') + ', ' + x.strftime('%b') + ' ' + x.strftime('%d') + ': '
 
 movieList = []
 
