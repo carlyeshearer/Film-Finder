@@ -1,6 +1,6 @@
 #This program scrapes the websites of three local movie theaters using BeautifulSoup and displays the information 
 #about today's movies to the user. Utilizes Tkinter to create a simple GUI.
-#Authors: Carly Shearer and Rachel Gaff
+#Authors: Carly Shearer, Rachel Gaff, and Gale Daniel
 #Date: 9/24/2023
 
 import requests
